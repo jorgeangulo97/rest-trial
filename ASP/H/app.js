@@ -1,22 +1,9 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');    
-    const nav = document.querySelector('.nav-links');
-    const navLinks=document.querySelectorAll('.nav-links li');
-    //Barra mugitu
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
- 
-    //Link animatuak
-        navLinks.forEach((link ,index) => {
-                if(link.style.animation){
-                    link.style.animation='';
-                }else{
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 0.3}s`;
-                }
-            });
-        //Animacion del menu
-        burger.classList.toggle('.toggle');
-        });
-}
-
-navSlide();
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
