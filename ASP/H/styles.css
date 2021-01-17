@@ -29,12 +29,12 @@
     display: none;
 }
 
-.navbar.active .nav-link {
+.navbar.active .hover-1 {
     color: #555;
 }
 
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
+.navbar.active .hover-1:hover,
+.navbar.active .hover-1:focus {
     color: #555;
     text-decoration: none;
 }
@@ -72,6 +72,7 @@ body {
     min-height: 110vh;
     background-color: #4ca1af;
     background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+
 }
 .imgFondoa{
     background-color: #490D40;
@@ -80,3 +81,79 @@ body {
     height: 950px;
     margin-top: -87px;
 }
+.hover-1 {
+    width: 50%;
+    text-align: center;
+    height: 44px;
+    line-height: 24px;
+    font-weight: 400; 
+    color: white;
+    padding-top : 20px;
+    padding-left : 20px;
+    padding-right : 20px;
+    padding-bottom: 10px;
+
+  }
+  .hover-1:hover{
+    text-decoration:none; 
+    cursor:pointer;  
+    color: white;
+  }
+.hover-1:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+  }
+.hover-1:hover:before {
+    transform: scaleX(1);
+  }
+  a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;  
+  }
+  
+a, a > span {
+    position: relative;
+    color: inherit;
+    line-height: 24px;
+  }
+  body:after {
+    content: '';
+    clear: both;
+  }
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .textoBonito1{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  .textoBonito2{
+    position: absolute;
+    top: 38%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  .textoBonito3{
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  .containerra {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
