@@ -67,16 +67,14 @@ body {
     background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
 
 }
-.imgFondoa{
+.containerra {
     background-image: url("house.jpg");
-    width: 100%;
-    background-size:100%;
-    background-position:center ;
-    height: auto;
-    margin-top: -87px;
-    background-repeat: no-repeat;
-    filter: brightness(0.50);
+    background-size: 100%;
+    height: 900px;
+    background-position: center;
+    filter:brightness(35%);
 }
+
 .hover-1 {
     width: 50%;
     text-align: center;
@@ -124,12 +122,6 @@ a, a > span {
 *{
     font-family: 'Poppins', sans-serif;
   }
-  .centered {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .textoBonito1{
     position: absolute;
     top: 35%;
@@ -161,57 +153,17 @@ a, a > span {
     color: white;
     font-family: 'Montserrat', sans-serif;
   }
-  /* BOTON CENTRAL 
-  .btn{
-    text-decoration: none;
-    color: white;
-
-    padding: 16px 48px;
-    border: 2px solid white;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.2s;
-  }
-  .btn span{
-    position: absolute;
-    width: 25% ;height: 100%;
-    top: 0;
-    background-color: white;
-    border-radius: 50% 50% 0 0;
-    transform: translateY(150%);
-    transition: all 0.3s;
-    z-index: -1;
-  }
-  .btn span:nth-child(1){left: 0;}
-  .btn span:nth-child(2){
-    left: 25%;
-    transition-delay:0.1s ;
-  }
-  .btn span:nth-child(3){
-    left: 50%;
-    transition-delay:0.2s ;
-  }
-  .btn span:nth-child(4){
-    left: 75%;
-    transition-delay: 0.3s;
-  }
-  .btn:hover span{
-    transform: translateY(0) scale(2);
-  }
-  .btn:hover{
-    color: #555;
-  }
-  */
-  .btn-one {
+  /* BOTON CENTRAL */
+  .btn-one a {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
-    cursor: pointer;
-    transition: all 0.3s;
   }
   .btn-one span {
     transition: all 0.3s;
+    color: white;
   }
+
   .btn-one::before {
     content: '';
     position: absolute;
@@ -253,5 +205,6 @@ a, a > span {
     opacity: 0; 
     transform: scale(0.1, 1);
   }
+
   
   
