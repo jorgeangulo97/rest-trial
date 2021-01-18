@@ -17,8 +17,7 @@
 }
 
 .navbar-brand img{
-    width:160px;
-    height: 70px;
+  width: 120px;height: 50px;
 }
 /* Change navbar styling on scroll */
 .navbar.active {
@@ -26,13 +25,17 @@
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar.active img{
-    display: none;
+  content:url("logo_transparent.png");
+  width:50px;
+  height: 50px;
 }
 
 .navbar.active .hover-1 {
     color: #555;
 }
-
+.navbar.active .hover-1:before{
+  background:#555;
+}
 .navbar.active .hover-1:hover,
 .navbar.active .hover-1:focus {
     color: #555;
@@ -44,26 +47,16 @@
 }
 
 
-/* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
     .navbar {
         background: #fff;
     }
-
     .navbar .navbar-brand, .navbar .nav-link {
         color: #555;
     }
 }
 
 
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
 .text-small {
     font-size: 0.9rem !important;
 }
@@ -75,11 +68,14 @@ body {
 
 }
 .imgFondoa{
-    background-color: #490D40;
     background-image: url("house.jpg");
-    background-size: cover;
-    height: 950px;
+    width: 100%;
+    background-size:100%;
+    background-position:center ;
+    height: auto;
     margin-top: -87px;
+    background-repeat: no-repeat;
+    filter: brightness(0.50);
 }
 .hover-1 {
     width: 50%;
@@ -137,23 +133,125 @@ a, a > span {
   .textoBonito1{
     position: absolute;
     top: 35%;
-    left: 15%;
+    left: 20%;
     transform: translate(-50%, -50%);
   }
   .textoBonito2{
     position: absolute;
-    top: 38%;
-    left: 15%;
+    top: 45%;
+    left: 18%;
     transform: translate(-50%, -50%);
   }
   .textoBonito3{
     position: absolute;
-    top: 41%;
-    left: 15%;
+    top: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
-  .containerra {
+  .textoBonito1 h2{
+    letter-spacing: 12px;
+    font-size: 84px;
     position: relative;
-    text-align: center;
     color: white;
   }
+  .textoBonito2 h4{
+    font-size: 22px;
+    position: relative;
+    text-align: justify;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /* BOTON CENTRAL 
+  .btn{
+    text-decoration: none;
+    color: white;
+
+    padding: 16px 48px;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .btn span{
+    position: absolute;
+    width: 25% ;height: 100%;
+    top: 0;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+    transform: translateY(150%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .btn span:nth-child(1){left: 0;}
+  .btn span:nth-child(2){
+    left: 25%;
+    transition-delay:0.1s ;
+  }
+  .btn span:nth-child(3){
+    left: 50%;
+    transition-delay:0.2s ;
+  }
+  .btn span:nth-child(4){
+    left: 75%;
+    transition-delay: 0.3s;
+  }
+  .btn:hover span{
+    transform: translateY(0) scale(2);
+  }
+  .btn:hover{
+    color: #555;
+  }
+  */
+  .btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+    color: white;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(85,85,85,0.3);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  
+  
